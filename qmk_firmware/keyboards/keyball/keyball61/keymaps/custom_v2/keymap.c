@@ -39,16 +39,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [nav] = LAYOUT_universal(
     KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KC_NO      , KC_NO      , KC_NO       , KC_NO       , KC_NO    , KC_NO    ,
-    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 G(KC_LEFT) , A(KC_LEFT) , A(KC_RIGHT) , G(KC_RIGHT) , KC_NO    , KC_NO    ,
+    DM_RSTP  , DM_REC1  , DM_REC2  , KC_NO    , KC_NO    , KC_NO    ,                                 G(KC_LEFT) , A(KC_LEFT) , A(KC_RIGHT) , G(KC_RIGHT) , KC_NO    , KC_NO    ,
     KC_NO    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , KC_NO    ,                                 KC_LEFT    , KC_DOWN    , KC_UP       , KC_RIGHT    , KC_NO    , KC_NO    ,
-    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           KC_NO    , KC_HOME    , KC_PGDN    , KC_PGUP     , KC_END      , KC_NO    , KC_NO    ,
+    KC_NO    , DM_PLY1  , DM_PLY2  , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           KC_NO    , KC_HOME    , KC_PGDN    , KC_PGUP     , KC_END      , KC_NO    , KC_NO    ,
     KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , _______  , KC_NO    ,           KC_NO    , KC_NO      , _______    , KC_NO       , KC_NO       , KC_NO    , KC_NO
   ),
 
   [mouse] = LAYOUT_universal(
     KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO   , KC_NO    ,
     KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KC_NO    , KC_WH_U  , KC_WH_D  , KC_NO    , KC_NO   , KC_NO    ,
-    KC_NO    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , AML_TO   ,                                 KC_BTN2  , KC_BTN1  , KC_BTN3  , KC_LEFT  , KC_NO   , KC_NO    ,
+    KC_NO    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , AML_TO   ,                                 KC_BTN2  , KC_BTN1  , KC_BTN3  , KC_NO    , KC_NO   , KC_NO    ,
     KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           KC_NO    , KC_NO    , CPI_D100 , CPI_I100 , KC_NO    , KC_NO   , KC_NO    ,
     KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , _______  ,           KC_NO    , KC_NO    , _______  , KC_NO    , KC_NO    , KC_NO   , KC_NO
   ),
