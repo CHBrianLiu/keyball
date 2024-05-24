@@ -46,11 +46,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [mouse] = LAYOUT_universal(
-    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KBC_RST  , KBC_SAVE   , KC_NO      , KC_NO    , KC_NO    , KC_NO    ,
-    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KC_NO    , G(KC_LBRC) , G(KC_RBRC) , KC_NO    , KC_NO    , KC_NO    ,
-    KC_NO    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , AML_TO   ,                                 KC_BTN2  , KC_BTN1    , KC_BTN3    , KC_NO    , KC_NO    , KC_NO    ,
-    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           KC_NO    , KC_NO    , CPI_D100   , CPI_I100   , SCRL_DVI , SCRL_DVD , KC_NO    ,
-    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , _______  ,           G(KC_W)  , KC_NO    , _______    , KC_NO      , KC_NO    , KC_NO    , _______
+    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KBC_RST  , KBC_SAVE   , KC_NO      , KC_NO     , KC_NO      , KC_NO    ,
+    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KC_NO    , G(KC_LBRC) , G(KC_RBRC) , G(KC_EQL) , G(KC_MINS) , KC_NO    ,
+    KC_NO    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , AML_TO   ,                                 KC_BTN2  , KC_BTN1    , KC_BTN3    , KC_NO     , KC_NO      , KC_NO    ,
+    KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           KC_NO    , KC_NO    , CPI_D100   , CPI_I100   , SCRL_DVI  , SCRL_DVD   , KC_NO    ,
+    KC_NO    , KC_NO    , KC_NO    , KC_NO    , _______  , KC_NO    , _______  ,           G(KC_W)  , KC_NO    , _______    , KC_NO      , KC_NO     , KC_NO      , _______
   ),
 
   [media] = LAYOUT_universal(
@@ -69,6 +69,13 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     return state;
 }
 
-void pointing_device_init_user(void) {
-    set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
+#ifdef OLED_ENABLE
+
+#    include "lib/oledkit/oledkit.h"
+
+void oledkit_render_info_user(void) {
+    keyball_oled_render_keyinfo();
+    keyball_oled_render_ballinfo();
+    keyball_oled_render_layerinfo();
 }
+#endif
