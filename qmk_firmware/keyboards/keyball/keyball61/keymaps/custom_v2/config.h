@@ -37,7 +37,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 2
-
-#define KEYBALL_SCROLL_DIV_DEFAULT 6 // 4: 1/8 (1/2^(n-1))
-
 #define KEYBALL_CPI_DEFAULT 500
+#define KEYBALL_SCROLL_DIV_DEFAULT 6 // 4: 1/8 (1/2^(n-1))
+#define KEYBALL_SCROLLSNAP_ENABLE 0 // disable scroll snap
+
+#define ONESHOT_TIMEOUT 1500
