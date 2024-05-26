@@ -20,6 +20,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "quantum.h"
 
+#define xxx KC_NO
+#define ___ KC_TRNS
+
 enum Layers {
     base = 0,
     nav,
@@ -54,11 +57,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [media] = LAYOUT_universal(
-    RGB_TOG  , AML_TO   , AML_I50  , AML_D50  , _______  , _______  ,                                  RGB_M_P  , RGB_M_B  , RGB_M_R  , RGB_M_SW , RGB_M_SN , RGB_M_K  ,
-    RGB_MOD  , RGB_HUI  , RGB_SAI  , RGB_VAI  , _______  , _______  ,                                  RGB_M_X  , RGB_M_G  , RGB_M_T  , RGB_M_TW , _______  , _______  ,
-    RGB_RMOD , RGB_HUD  , RGB_SAD  , RGB_VAD  , _______  , _______  ,                                  CPI_D1K  , CPI_D100 , CPI_I100 , CPI_I1K  , KBC_SAVE , KBC_RST  ,
-    _______  , _______  , SCRL_DVD , SCRL_DVI , SCRL_MO  , SCRL_TO  , EE_CLR   ,            EE_CLR   , KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
-    QK_BOOT  , _______  , KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  ,            _______  , KC_BSPC  , _______  , _______  , _______  , _______  , QK_BOOT
+    KC_F11 , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                            KC_F6   , KC_F7   , KC_F8      , KC_F9             , KC_F10          , KC_F12 ,
+    xxx    , KC_F14 , KC_F15 , xxx    , xxx    , xxx    ,                            xxx     , xxx     , KC_KB_MUTE , KC_KB_VOLUME_DOWN , KC_KB_VOLUME_UP , xxx    ,
+    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    ,                            xxx     , xxx     , xxx        , xxx               , xxx             , xxx    ,
+    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            xxx   , xxx     , xxx     , xxx        , xxx               , xxx             , xxx    ,
+    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            ___   , xxx     , xxx     , xxx        , xxx               , xxx             , xxx
   ),
 };
 // clang-format on
