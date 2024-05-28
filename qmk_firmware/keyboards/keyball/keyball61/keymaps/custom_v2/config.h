@@ -45,3 +45,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KEYBALL_SCROLLSNAP_ENABLE 0 // disable scroll snap
 
 #define ONESHOT_TIMEOUT 1500
+#define COMBO_TERM 40
