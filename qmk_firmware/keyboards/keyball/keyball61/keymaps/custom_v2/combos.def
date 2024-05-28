@@ -1,0 +1,23 @@
+//   name      . .   result        chord keys
+// --------------------------------------------
+// just like what i have in vim
+COMB(JK_ESC,         KC_ESC,       KC_J, KC_K)
+
+// m and , is the first and the second mouse buttons,
+// so they are the perfect fit to trigger the mouse layer.
+// assume the mouse layer is the second layer
+
+COMB(MComma_Mouse,   TO(2),    KC_M, KC_COMM)
+
+// don't need to move my right hand too far to reach out
+// to the top right corner.
+COMB(OP_Minus,       KC_MINS,      KC_O, KC_P)
+
+// like the one from above, but for the top left
+COMB(QW_GRAV,        KC_GRV,       KC_Q, KC_W)
+
+// experimental
+// if i can adapt to these two combos, i can release two buttons on
+// my right thumb area. it's hard though.
+COMB(KL_Backspace,   KC_BSPC,      KC_K, KC_L)
+COMB(JKL_Enter,      KC_ENT,       KC_J, KC_K, KC_L)

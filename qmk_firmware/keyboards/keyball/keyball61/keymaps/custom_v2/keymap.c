@@ -17,6 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include QMK_KEYBOARD_H
+#include "g/keymap_combo.h"
 
 #include "quantum.h"
 
@@ -82,30 +83,3 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
-
-
-// combo list
-enum combos {
-  // just like what i have while using vim
-  JK_ESC,
-  // my button 1 and 2 to enable mouse mode
-  MComma_mouse,
-  // it's too far to reach the most top right corner,
-  // so i use two fingers
-  OP_Minus,
-  // it's too far to reach the most top left corner,
-  // so i use two fingers
-  QW_Gravity
-};
-
-const uint16_t PROGMEM jk_combo[] = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM mdot_combo[] = {KC_M, KC_COMM, COMBO_END};
-const uint16_t PROGMEM op_combo[] = {KC_O, KC_P, COMBO_END};
-const uint16_t PROGMEM qw_combo[] = {KC_Q, KC_W, COMBO_END};
-
-combo_t key_combos[] = {
-  [JK_ESC] = COMBO(jk_combo, KC_ESC),
-  [MComma_mouse] = COMBO(mdot_combo, TO(mouse)),
-  [OP_Minus] = COMBO(op_combo, KC_MINS),
-  [QW_Gravity] = COMBO(qw_combo, KC_GRV),
-};
