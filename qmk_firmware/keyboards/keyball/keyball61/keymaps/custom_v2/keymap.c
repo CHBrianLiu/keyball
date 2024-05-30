@@ -77,3 +77,10 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    // always change back to normal trackball mode when leave mouse layer.
+    keyball_set_scroll_mode(false);
+
+    return state;
+}
