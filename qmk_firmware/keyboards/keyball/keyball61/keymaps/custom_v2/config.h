@@ -40,7 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // have to wait one second to use the mouse keys
 // this prevents accident touch of the trackball.
 #define AUTO_MOUSE_DELAY 1000
-#define KEYBALL_CPI_DEFAULT 500
+#define KEYBALL_CPI_DEFAULT 400
 #define KEYBALL_SCROLL_DIV_DEFAULT 6 // 4: 1/8 (1/2^(n-1))
 #define KEYBALL_SCROLLSNAP_ENABLE 0 // disable scroll snap
 

@@ -81,6 +81,18 @@ void oledkit_render_info_user(void) {
 layer_state_t layer_state_set_user(layer_state_t state) {
     // always change back to normal trackball mode when leave mouse layer.
     keyball_set_scroll_mode(false);
-
+    // when not in the mouse layer, make trackball too slow to use.
+    // change back to default once back to the mouse layer.
+    if (IS_LAYER_ON_STATE(state, mouse)) {
+        // based on the code, set the cpi to 0 will be the default value.
+        keyball_set_cpi(0);
+    } else {
+        keyball_set_cpi(1);
+    }
     return state;
+}
+
+void keyboard_post_init_user(void) {
+    // initialize with the minimum trackball cpi to indicate it's not in the mouse layer
+    keyball_set_cpi(1);
 }
