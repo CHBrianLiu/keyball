@@ -38,31 +38,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB        , KC_Q         , KC_W           , KC_E          , KC_R          , KC_T    ,                           KC_Y   , KC_U , KC_I     , KC_O     , KC_P      , KC_EQL   ,
     CW_TOGG       , KC_A         , KC_S           , KC_D          , KC_F          , KC_G    ,                           KC_H   , KC_J , KC_K     , KC_L     , KC_SCLN   , KC_QUOT  ,
     OSM(MOD_LSFT) , KC_Z         , KC_X           , KC_C          , KC_V          , KC_B    , KC_LBRC ,       KC_RBRC , KC_N   , KC_M , KC_COMM  , KC_DOT   , KC_SLSH   , KC_BSLS  ,
-    G(KC_TAB)     , OSM(MOD_MEH) , OSM(MOD_LALT)  , OSM(MOD_LGUI) , OSM(MOD_LCTL) , KC_SPC  , TO(nav) ,       KC_BSPC , KC_ENT , xxx  , KC_NO    , KC_NO    , TO(mouse) , TO(media)
+    G(KC_TAB)     , OSM(MOD_MEH) , OSM(MOD_LALT)  , OSM(MOD_LGUI) , OSM(MOD_LCTL) , KC_SPC  , TO(nav) ,       KC_BSPC , KC_ENT , xxx  , KC_NO    , KC_NO    , TO(base)  , TO(media)
   ),
 
   [nav] = LAYOUT_universal(
-    KC_NO  , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KC_NO      , KC_NO      , KC_NO       , KC_NO       , KC_NO    , KC_NO    ,
-    xxx    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    ,                                 G(KC_LEFT) , A(KC_LEFT) , A(KC_RIGHT) , G(KC_RIGHT) , KC_NO    , KC_NO    ,
-    KC_NO  , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , KC_NO    ,                                 KC_LEFT    , KC_DOWN    , KC_UP       , KC_RIGHT    , KC_NO    , KC_NO    ,
+    xxx    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KC_NO      , KC_NO      , KC_NO       , KC_NO       , KC_NO    , KC_NO    ,
+    ___    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    ,                                 G(KC_LEFT) , A(KC_LEFT) , A(KC_RIGHT) , G(KC_RIGHT) , KC_NO    , KC_NO    ,
+    xxx    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , KC_NO    ,                                 KC_LEFT    , KC_DOWN    , KC_UP       , KC_RIGHT    , KC_NO    , KC_NO    ,
     ___    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           KC_NO    , KC_HOME    , KC_PGDN    , KC_PGUP     , KC_END      , KC_NO    , KC_NO    ,
-    KC_NO  , KC_NO    , ___      , ___      , ___      , ___      , TO(base) ,           KC_NO    , KC_NO      , _______    , KC_NO       , KC_NO       , KC_NO    , KC_NO
+    ___    , KC_NO    , ___      , ___      , ___      , ___      , TO(base) ,           KC_NO    , KC_NO      , _______    , KC_NO       , KC_NO       , ___    , KC_NO
   ),
 
   [mouse] = LAYOUT_universal(
     xxx  , xxx     , LSG(KC_2) , xxx     , xxx     , xxx  ,                             KBC_RST  , KBC_SAVE   , xxx        , xxx       , xxx        , xxx     ,
-    xxx  , xxx     , xxx       , xxx     , G(KC_R) , xxx  ,                             AML_TO   , CPI_D100   , CPI_I100   , SCRL_DVI  , SCRL_DVD   , xxx     ,
+    ___  , xxx     , xxx       , xxx     , G(KC_R) , xxx  ,                             AML_TO   , CPI_D100   , CPI_I100   , SCRL_DVI  , SCRL_DVD   , xxx     ,
     xxx  , G(KC_A) , xxx       , xxx     , xxx     , xxx  ,                             TO(base) , G(KC_LBRC) , G(KC_RBRC) , G(KC_EQL) , G(KC_MINS) , xxx     ,
     ___  , xxx     , G(KC_X)   , G(KC_C) , G(KC_V) , xxx  , xxx      ,           xxx  , G(KC_W)  , KC_BTN1    , KC_BTN2    , KC_BTN3   , xxx        , xxx     ,
-    ___  , xxx     , ___       , xxx     , ___     , xxx  , TO(base) ,           xxx  , SCRL_TO  , xxx        , xxx        , xxx       , xxx        , ___
+    ___  , xxx     , ___       , ___     , ___     , xxx  , TO(base) ,           xxx  , SCRL_TO  , xxx        , xxx        , xxx       , ___        , ___
   ),
 
   [media] = LAYOUT_universal(
-    KC_F11 , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                               KC_F6    , KC_F7   , KC_F8      , KC_F9             , KC_F10          , KC_F12 ,
-    xxx    , KC_F14 , KC_F15 , xxx    , xxx    , xxx    ,                               xxx      , xxx     , KC_KB_MUTE , KC_KB_VOLUME_DOWN , KC_KB_VOLUME_UP , xxx    ,
-    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    ,                               TO(base) , xxx     , xxx        , xxx               , xxx             , xxx    ,
-    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    , xxx      ,            xxx   , xxx      , xxx     , xxx        , xxx               , xxx             , xxx    ,
-    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    , TO(base) ,            ___   , xxx      , xxx     , xxx        , xxx               , xxx             , xxx
+    KC_F11 , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                            KC_F6    , KC_F7   , KC_F8      , KC_F9             , KC_F10          , KC_F12 ,
+    xxx    , KC_F14 , KC_F15 , xxx    , xxx    , xxx    ,                            xxx      , xxx     , KC_KB_MUTE , KC_KB_VOLUME_DOWN , KC_KB_VOLUME_UP , xxx    ,
+    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    ,                            TO(base) , xxx     , xxx        , xxx               , xxx             , xxx    ,
+    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            xxx   , xxx      , xxx     , xxx        , xxx               , xxx             , xxx    ,
+    ___    , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            ___   , xxx      , xxx     , xxx        , xxx               , ___             , xxx
   ),
 };
 // clang-format on
