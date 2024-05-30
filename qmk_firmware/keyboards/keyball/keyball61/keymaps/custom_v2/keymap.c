@@ -50,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [mouse] = LAYOUT_universal(
-    xxx  , xxx     , LSG(KC_2) , xxx     , xxx     , xxx  ,                              KBC_RST  , KBC_SAVE   , xxx        , xxx       , xxx        , xxx     ,
-    xxx  , xxx     , xxx       , xxx     , G(KC_R) , xxx  ,                              AML_TO   , CPI_D100   , CPI_I100   , SCRL_DVI  , SCRL_DVD   , xxx     ,
-    xxx  , G(KC_A) , xxx       , xxx     , xxx     , xxx  ,                              TO(base) , G(KC_LBRC) , G(KC_RBRC) , G(KC_EQL) , G(KC_MINS) , xxx     ,
+    xxx  , xxx     , LSG(KC_2) , xxx     , xxx     , xxx  ,                             KBC_RST  , KBC_SAVE   , xxx        , xxx       , xxx        , xxx     ,
+    xxx  , xxx     , xxx       , xxx     , G(KC_R) , xxx  ,                             AML_TO   , CPI_D100   , CPI_I100   , SCRL_DVI  , SCRL_DVD   , xxx     ,
+    xxx  , G(KC_A) , xxx       , xxx     , xxx     , xxx  ,                             TO(base) , G(KC_LBRC) , G(KC_RBRC) , G(KC_EQL) , G(KC_MINS) , xxx     ,
     ___  , xxx     , G(KC_X)   , G(KC_C) , G(KC_V) , xxx  , xxx      ,           xxx  , G(KC_W)  , KC_BTN1    , KC_BTN2    , KC_BTN3   , xxx        , xxx     ,
     ___  , xxx     , ___       , xxx     , ___     , xxx  , TO(base) ,           xxx  , SCRL_TO  , xxx        , xxx        , xxx       , xxx        , ___
   ),
