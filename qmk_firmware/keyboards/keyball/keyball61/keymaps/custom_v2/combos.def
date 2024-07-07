@@ -7,6 +7,7 @@ COMB(JK_ESC,         KC_ESC,       KC_J, KC_K)
 // so they are the perfect fit to trigger the mouse layer.
 // assume the mouse layer is the second layer
 COMB(MComma_Mouse,   TO(2),        KC_M, KC_COMM)
+COMB(GH_BASE,        TO(0),        KC_G, KC_H)
 
 // don't need to move my right hand too far to reach out
 // to the top right corner.
