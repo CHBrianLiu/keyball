@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ___    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    ,                                 G(KC_LEFT) , A(KC_LEFT) , A(KC_RIGHT) , G(KC_RIGHT) , KC_NO    , KC_NO    ,
     xxx    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , KC_NO    ,                                 KC_LEFT    , KC_DOWN    , KC_UP       , KC_RIGHT    , KC_NO    , KC_NO    ,
     ___    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           KC_NO    , KC_HOME    , KC_PGDN    , KC_PGUP     , KC_END      , KC_NO    , KC_NO    ,
-    ___    , KC_NO    , ___      , ___      , ___      , ___      , TO(base) ,           KC_NO    , KC_NO      , _______    , KC_NO       , KC_NO       , ___    , KC_NO
+    ___    , KC_NO    , ___      , ___      , ___      , ___      , TO(base) ,           KC_NO    , KC_NO      , _______    , KC_NO       , KC_NO       , ___      , KC_NO
   ),
 
   [mouse] = LAYOUT_universal(
@@ -58,11 +58,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [media] = LAYOUT_universal(
-    KC_F11 , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                            KC_F6    , KC_F7   , KC_F8      , KC_F9             , KC_F10          , KC_F12 ,
-    xxx    , KC_F14 , KC_F15 , xxx    , xxx    , xxx    ,                            xxx      , xxx     , KC_KB_MUTE , KC_KB_VOLUME_DOWN , KC_KB_VOLUME_UP , xxx    ,
-    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    ,                            TO(base) , xxx     , xxx        , xxx               , xxx             , xxx    ,
-    xxx    , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            xxx   , xxx      , xxx     , xxx        , xxx               , xxx             , xxx    ,
-    ___    , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            ___   , xxx      , xxx     , xxx        , xxx               , ___             , xxx
+    KC_F11     , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                            KC_F6    , KC_F7   , KC_F8      , KC_F9             , KC_F10          , KC_F12 ,
+    G(C(KC_Q)) , KC_F14 , KC_F15 , xxx    , xxx    , xxx    ,                            xxx      , xxx     , KC_KB_MUTE , KC_KB_VOLUME_DOWN , KC_KB_VOLUME_UP , xxx    ,
+    xxx        , xxx    , xxx    , xxx    , xxx    , xxx    ,                            TO(base) , xxx     , xxx        , xxx               , xxx             , xxx    ,
+    xxx        , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            xxx   , xxx      , xxx     , xxx        , xxx               , xxx             , xxx    ,
+    ___        , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            ___   , xxx      , xxx     , xxx        , xxx               , ___             , xxx
   ),
 };
 // clang-format on
