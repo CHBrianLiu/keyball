@@ -6,7 +6,7 @@ COMB(JK_ESC,         KC_ESC,       KC_J, KC_K)
 // m and , is the first and the second mouse buttons,
 // so they are the perfect fit to trigger the mouse layer.
 // assume the mouse layer is the second layer
-COMB(MComma_Mouse,   TO(2),    KC_M, KC_COMM)
+COMB(MComma_Mouse,   TO(2),        KC_M, KC_COMM)
 
 // don't need to move my right hand too far to reach out
 // to the top right corner.
@@ -17,8 +17,8 @@ COMB(QW_GRAV,        KC_GRV,       KC_Q, KC_W)
 
 // Record and step recording the temp macro
 // then replay the macro
-COMB(Grav12_Rec,      DM_REC1,      KC_GRV, KC_1, KC_2)
-COMB(Grav1_Replay,      DM_PLY1,      KC_GRV, KC_1)
+COMB(Grav12_Rec,     DM_REC1,      KC_GRV, KC_1, KC_2)
+COMB(Grav1_Replay,   DM_PLY1,      KC_GRV, KC_1)
 
 // experimental
 // if i can adapt to these two combos, i can release two buttons on
