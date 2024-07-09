@@ -58,11 +58,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [media] = LAYOUT_universal(
-    KC_F11     , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                            KC_F6        , KC_F7        , KC_F8      , KC_F9             , KC_F10          , KC_F12 ,
-    G(C(KC_Q)) , KC_F14 , KC_F15 , xxx    , xxx    , xxx    ,                            xxx          , xxx          , KC_KB_MUTE , KC_KB_VOLUME_DOWN , KC_KB_VOLUME_UP , xxx    ,
-    xxx        , xxx    , xxx    , xxx    , xxx    , xxx    ,                            LCA(KC_LEFT) , LCA(KC_DOWN) , LCA(KC_UP) , LCA(KC_RIGHT)     , LCA(KC_ENT)     , xxx    ,
-    xxx        , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            xxx   , xxx          , xxx          , xxx        , xxx               , xxx             , xxx    ,
-    ___        , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            ___   , xxx          , xxx          , xxx        , xxx               , ___             , xxx
+    KC_F11     , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                            KC_F6         , KC_F7        , KC_F8      , KC_F9             , KC_F10          , KC_F12 ,
+    G(C(KC_Q)) , KC_F14 , KC_F15 , xxx    , xxx    , xxx    ,                            xxx           , xxx          , KC_KB_MUTE , KC_KB_VOLUME_DOWN , KC_KB_VOLUME_UP , xxx    ,
+    xxx        , xxx    , xxx    , xxx    , xxx    , xxx    ,                            LCA(KC_LEFT)  , LCA(KC_DOWN) , LCA(KC_UP) , LCA(KC_RIGHT)     , LCA(KC_ENT)     , xxx    ,
+    xxx        , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            xxx   , LCAG(KC_LEFT) , xxx          , xxx        , LCAG(KC_RIGHT)    , xxx             , xxx    ,
+    ___        , xxx    , xxx    , xxx    , xxx    , xxx    , xxx   ,            ___   , xxx           , xxx          , xxx        , xxx               , ___             , xxx
   ),
 };
 // clang-format on
