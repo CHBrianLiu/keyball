@@ -42,11 +42,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [nav] = LAYOUT_universal(
-    xxx    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                                 KC_NO      , KC_NO      , KC_NO       , KC_NO       , KC_NO    , KC_NO    ,
-    ___    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    ,                                 G(KC_LEFT) , A(KC_LEFT) , A(KC_RIGHT) , G(KC_RIGHT) , KC_NO    , KC_NO    ,
-    xxx    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , KC_NO    ,                                 KC_LEFT    , KC_DOWN    , KC_UP       , KC_RIGHT    , KC_NO    , KC_NO    ,
-    ___    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           KC_NO    , KC_HOME    , KC_PGDN    , KC_PGUP     , KC_END      , KC_NO    , KC_NO    ,
-    ___    , KC_NO    , ___      , ___      , ___      , ___      , TO(base) ,           KC_NO    , KC_NO      , _______    , KC_NO       , KC_NO       , ___      , KC_NO
+    xxx    , KC_NO    , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,                               xxx        , xxx        , xxx      , xxx         , xxx         , xxx    ,
+    ___    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    ,                               xxx        , xxx        , xxx      , xxx         , xxx         , xxx    ,
+    xxx    , MOD_LGUI , MOD_LALT , MOD_LCTL , MOD_LSFT , KC_NO    ,                               xxx        , A(KC_LEFT) , KC_UP    , A(KC_RIGHT) , xxx         , xxx    ,
+    ___    , xxx      , xxx      , KC_NO    , KC_NO    , KC_NO    , KC_NO    ,           xxx    , G(KC_LEFT) , KC_LEFT    , KC_DOWN  , KC_RIGHT    , G(KC_RIGHT) , xxx    ,
+    ___    , KC_NO    , ___      , ___      , ___      , ___      , TO(base) ,           xxx    , xxx        , ___        , xxx      , xxx         , ___         , xxx
   ),
 
   [mouse] = LAYOUT_universal(
