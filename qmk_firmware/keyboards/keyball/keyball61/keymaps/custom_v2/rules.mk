@@ -1,4 +1,5 @@
 RGBLIGHT_ENABLE = no
+# Not sure why OLED display on my keyboard not working...
 OLED_ENABLE = no
 VIA_ENABLE = no
 
